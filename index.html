@@ -94,11 +94,24 @@
             height: 200px;
             overflow: auto;
         }
+    .container {
+          max-width: 1200px;
+          margin: 0 auto;
+            padding: 20px;
+      }
 
         .row {
+            display: flex;
             width: 90%;
             margin: 0 auto;
+            flex-wrap: wrap;
+          justify-content: center;
         }
+        .column {
+    flex-basis: 33.33%;
+    margin: 20px;
+}
+
 
         /*desktop version*/
         @media (min-width: 992px) {
@@ -116,6 +129,7 @@
                 margin-left: auto;
                 margin-right: auto;
                 display: block;
+                flex-basis: 50%;
             }
 
             .column-md-12 {
